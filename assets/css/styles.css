@@ -1,0 +1,84 @@
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+.main{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100vh;
+}
+
+.header{
+    padding: 30px;
+    background: #1A1A1E;
+}
+
+.header span{
+    color: #f3f3f3;
+    font-size: 2rem;
+}
+
+.menu{
+    padding: 5px 0;
+    border-top: 2px solid #2B2B2F;
+    border-bottom: 2px solid #2B2B2F;
+    margin: 20px 0;
+}
+.menu__list{
+    padding-left: 0;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+.menu__item{
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.menu__item + .menu__item{
+    margin-bottom: 5px;
+}
+
+.menu__item:hover{
+    background-color: #A0A0A2;
+}
+.menu__list a{
+    color: #f3f3f3;
+    text-decoration: none;
+}
+.dashboard{
+    background-color: #0C0C0C;
+    padding: 30px;
+    display: grid;
+    gap: 30px;
+    grid-template: repeat(2, 1fr) / 2fr 1fr;
+    grid-template-areas: "candle-chart candle-chart"
+    "buy-sell market-exchange";
+}
+
+.dashboard__candle-chart{
+    background-color: #252529;
+    border-radius: 25px;
+    grid-area: candle-chart;
+}
+
+.dashboard__buy-sell{
+    background-color: #252529;
+    border-radius: 25px;
+    grid-area: buy-sell;
+}
+
+.dashboard__market-exchange{
+    background-color: #252529;
+    border-radius: 25px;
+    grid-area: market-exchange;
+}
