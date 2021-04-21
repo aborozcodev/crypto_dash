@@ -17,51 +17,76 @@
                 <span>Cripto Chain</span>
             </figure>
 
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="">Dashboard</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="">Activity</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="">Portfolio</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="">Analytics</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="">News</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="">Profile</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="wallet">
-                <h3>Wallet</h3>
-                <div class="wallet__btc"></div>
-                <div class="wallet__balance"></div>
+            <div class="submenu">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="">Dashboard</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="">Activity</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="">Portfolio</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="">Analytics</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="">News</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="">Profile</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="wallet">
+                    <h3>Wallet</h3>
+                    <div class="wallet__btc">
+                        <h4>BTC</h4>
+                        <span>0.0002584</span>
+                    </div>
+                    <div class="wallet__balance">
+                        <h4>Current Balance</h4>
+                        <span>$ 15, 000.00</span>
+                    </div>
+                </div>
+    
+                <div class="profile">
+                    <div class="profile__account">
+                        <img src="" alt="">
+                        <div class="profile__user">
+                            <h4>Adrian Bautista</h4>
+                            <span>adrian@platzi.com</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="profile">
-                <div class="profile__account"></div>
-            </div>
+            <button id="btnMenu">menu</button>
         </header>
 
         <main class="dashboard">
             <div class="dashboard__candle-chart">
-                
+                candle
             </div>
             <div class="dashboard__buy-sell">
-                
+               
             </div>
             <div class="dashboard__market-exchange">
                 
             </div>
         </main>
     </div>
+
+    <script>
+        const $button = document.querySelector('#btnMenu')
+        const $submenu = document.querySelector('.submenu')
+
+        $button.addEventListener('click', function(e){
+            $submenu.classList.toggle('active')
+        })
+    </script>
 </body>
 </html>
