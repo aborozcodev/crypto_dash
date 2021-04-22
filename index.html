@@ -8,12 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/84574ad030.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="main">
         <header class="header">
             <figure class="header__logo">
-                <img src="" alt="Logo Crypto Dashboard">
                 <span>Cripto Chain</span>
             </figure>
 
@@ -21,22 +21,22 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="">Dashboard</a>
+                            <a href=""><i class="fas fa-grip-horizontal"></i> Dashboard</a>
                         </li>
                         <li class="menu__item">
-                            <a href="">Activity</a>
+                            <a href=""><i class="fas fa-chart-line"></i> Activity</a>
                         </li>
                         <li class="menu__item">
-                            <a href="">Portfolio</a>
+                            <a href=""><i class="fas fa-folder-open"></i> Portfolio</a>
                         </li>
                         <li class="menu__item">
-                            <a href="">Analytics</a>
+                            <a href=""><i class="fas fa-chart-bar"></i> Analytics</a>
                         </li>
                         <li class="menu__item">
-                            <a href="">News</a>
+                            <a href=""><i class="far fa-newspaper"></i> News</a>
                         </li>
                         <li class="menu__item">
-                            <a href="">Profile</a>
+                            <a href=""><i class="fas fa-user"></i> Profile</a>
                         </li>
                     </ul>
                 </nav>
@@ -55,7 +55,7 @@
     
                 <div class="profile">
                     <div class="profile__account">
-                        <img src="" alt="">
+                        <img src="https://lh3.googleusercontent.com/ogw/ADGmqu8EXxWlak5Y67cgAQsVGePxmDw67CzYTIDqVEF7DA=s32-c-mo" alt="">
                         <div class="profile__user">
                             <h4>Adrian Bautista</h4>
                             <span>adrian@platzi.com</span>
@@ -64,7 +64,7 @@
                 </div>
             </div>
 
-            <button id="btnMenu">menu</button>
+            <button id="btnMenu"><i class="fas fa-bars"></i></button>
         </header>
 
         <main class="dashboard">
@@ -72,7 +72,7 @@
                 <div class="crypto-summary">
                     
                     <h2>ADA/USDT</h2>
-                    <span>Cardano</span>
+                    <span><i class="fas fa-book"></i> Cardano</span>
                     
 
                     <div class="crypto-summary__exchange">
@@ -98,7 +98,15 @@
                         <p>0.6033</p>
                     </div>
                 </div>
-                <div class="crypto-chart"></div>
+                <div class="crypto-chart">
+                    <ul class="tabs">
+                        <li><a href="">24H</a></li>
+                        <li><a href="">1W</a></li>
+                        <li><a href="">1M</a></li>
+                        <li><a href="">1Y</a></li>
+                        <li><a href="">All</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="dashboard__buy-sell">
                 <ul class="tabs">
@@ -118,7 +126,7 @@
                         </div>
                         <div class="market__input-secondary">
                             <input type="text" value="501,198.848">
-                            <span>USDT</span>
+                            <span>ADA</span>
                         </div>
                         <div class="market__range">
                             <input type="range">
@@ -135,7 +143,7 @@
                         </div>
                         <div class="market__input-secondary">
                             <input type="text" value="501,198.848">
-                            <span>USDT</span>
+                            <span>ADA</span>
                         </div>
                         <div class="market__range">
                             <input type="range">
@@ -145,7 +153,106 @@
                 </div>
             </div>
             <div class="dashboard__market-exchange">
-                
+                <div class="rates">
+                    <div class="rates__rate">
+                        <h2>4,894.52 <i class="fas fa-arrow-up"></i></h2>
+                    </div>
+                    <div class="rates__more">
+                        <span>More <i class="fas fa-signal"></i></span>
+                    </div>
+                </div>
+
+                <table class="rates__table">
+                    <thead>
+                        <tr>
+                            <th>Price (USDT)</th>
+                            <th>Amount</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rates__currency--up">4,827.35</td>
+                            <td>0.00089</td>
+                            <td>17:49:48</td>
+                        </tr>
+                        <tr>
+                            <td class="rates__currency--up">4,827.35</td>
+                            <td>0.00089</td>
+                            <td>17:49:48</td>
+                        </tr>
+                        <tr>
+                            <td class="rates__currency--down">4,827.35</td>
+                            <td>0.00089</td>
+                            <td>17:49:48</td>
+                        </tr>
+                        <tr>
+                            <td class="rates__currency--up">4,827.35</td>
+                            <td>0.00089</td>
+                            <td>17:49:48</td>
+                        </tr>
+                        <tr>
+                            <td class="rates__currency--up">4,827.35</td>
+                            <td>0.00089</td>
+                            <td>17:49:48</td>
+                        </tr>
+                        <tr>
+                            <td class="rates__currency--up">4,827.35</td>
+                            <td>0.00089</td>
+                            <td>17:49:48</td>
+                        </tr>
+                        <tr>
+                            <td class="rates__currency--down">4,827.35</td>
+                            <td>0.00089</td>
+                            <td>17:49:48</td>
+                        </tr>
+                        <tr>
+                            <td class="rates__currency--up">4,827.35</td>
+                            <td>0.00089</td>
+                            <td>17:49:48</td>
+                        </tr>
+                        <tr>
+                            <td class="rates__currency--down">4,827.35</td>
+                            <td>0.00089</td>
+                            <td>17:49:48</td>
+                        </tr>
+                        <tr>
+                            <td class="rates__currency--down">4,827.35</td>
+                            <td>0.00089</td>
+                            <td>17:49:48</td>
+                        </tr>
+                        <tr>
+                            <td class="rates__currency--up">4,827.35</td>
+                            <td>0.00089</td>
+                            <td>17:49:48</td>
+                        </tr>
+                        <tr>
+                            <td class="rates__currency--down">4,827.35</td>
+                            <td>0.00089</td>
+                            <td>17:49:48</td>
+                        </tr>
+                        <tr>
+                            <td class="rates__currency--down">4,827.35</td>
+                            <td>0.00089</td>
+                            <td>17:49:48</td>
+                        </tr>
+                        <tr>
+                            <td class="rates__currency--down">4,827.35</td>
+                            <td>0.00089</td>
+                            <td>17:49:48</td>
+                        </tr>
+                        <tr>
+                            <td class="rates__currency--up">4,827.35</td>
+                            <td>0.00089</td>
+                            <td>17:49:48</td>
+                        </tr>
+                        <tr>
+                            <td class="rates__currency--up">4,827.35</td>
+                            <td>0.00089</td>
+                            <td>17:49:48</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </main>
     </div>

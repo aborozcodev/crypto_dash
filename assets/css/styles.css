@@ -29,6 +29,10 @@ body{
     right: 35px;
     top: 35px;
     display: none;
+    background: transparent;
+    border: 0;
+    color: #f3f3f3;
+    font-size: 2.2rem;
 }
 .header span{
     color: #f3f3f3;
@@ -100,8 +104,6 @@ body{
 }
 
 .profile__account img{
-    height: 55px;
-    width: 55px;
     border-radius: 50%;
     background-color: red;
     margin-right: 15px;
@@ -204,6 +206,10 @@ body{
     font-size: 1.6rem;
 }
 
+.crypto-chart{
+    width: 80%;
+    padding-left: 16px;
+}
 .dashboard__buy-sell{
     background-color: #252529;
     border-radius: 25px;
@@ -215,8 +221,60 @@ body{
     background-color: #252529;
     border-radius: 25px;
     grid-area: market-exchange;
+    padding: 16px;
 }
 
+.rates{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.rates__more i{
+    color: #0AB372;
+}
+.rates h2{
+    font-size: 2rem;
+    color: #0AB372;
+}
+
+.rates span{
+    font-size: 1.4rem;
+    color: #f3f3f3;
+}
+.rates__table{
+    width: 100%;
+}
+
+.rates__currency--up{
+    color: #0AB372;
+}
+
+.rates__currency--down{
+    color: #CF314A;
+}
+.rates__table thead{
+    border-bottom: 2px solid #36373D;
+    color: #46464A;
+    font-size: 1.3rem;
+}
+.rates__table th{
+    text-align: left;
+    padding-bottom: 10px;
+}
+.rates__table th:nth-child(3){
+    text-align: right;
+}
+
+.rates__table tbody{
+    font-size: 1.2rem;
+    color: #f3f3f3;
+    font-weight: bold;
+}
+.rates__table td:nth-child(3){
+    text-align: right;
+}
 .tabs{
     padding-left: 0;
     list-style: none;
@@ -278,6 +336,10 @@ body{
     color: #f3f3f3;
 }
 
+.market__input-main input:focus-visible, .market__input-secondary input:focus-visible{
+    outline: 0;
+}
+
 .market__input-main span, .market__input-secondary span{
     background-color: transparent;
     border: 0;
@@ -305,7 +367,7 @@ body{
 .market__sell button{
     background: #CF314A;
 }
-@media screen and (max-width: 468px){
+@media screen and (max-width: 768px){
     .main{
         grid-template: auto 1fr 1fr 1fr / repeat(2, 1fr);
         height: auto;
@@ -344,7 +406,7 @@ body{
     }
 
     .dashboard{
-        grid-template: auto 1fr 1fr / 1fr;
+        grid-template: auto 1fr auto / 1fr;
         grid-template-areas: "candle-chart"
         "buy-sell"
         "market-exchange";
@@ -352,8 +414,13 @@ body{
     .crypto-summary{
         width: 100%;
         border-right: 0;
+        margin-bottom: 12px;
     }
 
+    .crypto-chart{
+        width: 100%;
+        padding-left: 0;
+    }
     .tabs{
         font-size: 1.6rem;
     }
