@@ -210,6 +210,60 @@ body{
     width: 80%;
     padding-left: 16px;
 }
+
+.crypto-chart__candles{
+    display: grid;
+    grid-template-rows: repeat(8,1fr);
+    grid-template-columns: repeat(auto-fill,1fr);
+    height: 100%;
+    
+}
+
+.crypto-chart__candles .tabs{
+    grid-column: 1 / 11;
+    grid-row: 1 / 2;
+}
+.crypto-chart__candle{
+    grid-column: 1 / 10;
+    grid-row: 2 / 8;
+    border: 2px solid #f3f3f3;
+    border-radius: 6px;
+    display: grid;
+    grid-template: repeat(6,1fr) / repeat(6,1fr);
+}
+.crypto-chart__currency{
+    grid-column: 10 / 11;
+    grid-row: 2 / 8;
+    border: 1px sold red;
+    
+}
+
+.crypto-chart__time{
+    grid-column: 1 / 10;
+    align-self: center;
+}
+
+.crypto-rates{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    font-size: 1.2rem;
+    color: #6E6F73;
+    text-align: center;
+}
+
+.crypto-hours{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    font-size: 1.2rem;
+    color: #6E6F73;
+}
 .dashboard__buy-sell{
     background-color: #252529;
     border-radius: 25px;
