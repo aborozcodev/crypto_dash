@@ -132,12 +132,83 @@ body{
     background-color: #252529;
     border-radius: 25px;
     grid-area: candle-chart;
+    padding: 16px;
+    color: #f3f3f3;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dashboard__candle-chart h2{
+    font-size: 2rem;
+}
+
+.dashboard__candle-chart span{
+    font-size: 1.2rem;
+    color: #6E6F73;
+}
+
+.crypto-summary{
+    width: 20%;
+    padding-right: 20px;
+    border-right: 2px solid #36373D;
+}
+
+.crypto-summary h5{
+    font-size: 1.2rem;
+    color: #6E6F73;
+}
+.crypto-summary__exchange{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.crypto-summary__exchange h4{
+    font-size: 2rem;
+    color: #0AB372;
+}
+
+.crypto-summary h6{
+    font-size: 1.6rem;
+    color: #6E6F73;
+}
+.crypto-summary p{
+    font-size: 1.2rem;
+    color: #6E6F73;
+}
+
+.crypto-summary__change{
+    margin: 20px 0;
+}
+
+.crypto-summary__quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.crypto-summary__quantity h6{
+    color: #0AB372;
+}
+.crypto-summary__high{
+    margin: 20px 0;
+}
+
+.crypto-summary__high{
+    margin: 20px 0;
+}
+
+.crypto-summary__high p, .crypto-summary__low p{
+    color: #f3f3f3;
+    font-size: 1.6rem;
 }
 
 .dashboard__buy-sell{
     background-color: #252529;
     border-radius: 25px;
     grid-area: buy-sell;
+    padding: 16px;
 }
 
 .dashboard__market-exchange{
@@ -146,9 +217,98 @@ body{
     grid-area: market-exchange;
 }
 
+.tabs{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.tabs li{
+    flex: 1;
+    text-align: center;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #36373D;
+}
+
+.tabs li:hover{
+    border-bottom: 2px solid #f3f3f3;
+}
+.tabs li a{
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
+.market{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.market__buy h2, .market__sell h2{
+    font-size: 2.2rem;
+    color: #f3f3f3;
+    margin-bottom: 10px;
+}
+
+.market__buy p, .market__sell p{
+    font-size: 1.2rem;
+    color: #6E6F73;
+    margin-bottom: 20px;
+}
+
+.market__input-main, .market__input-secondary{
+    background-color: #2A2D36;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.market__input-main input, .market__input-secondary input{
+    background-color: transparent;
+    border: 0;
+    color: #f3f3f3;
+}
+
+.market__input-main span, .market__input-secondary span{
+    background-color: transparent;
+    border: 0;
+    color: #6E6F73;
+}
+
+.market__range input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.market__buy button, .market__sell button{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    color: #f3f3f3;
+    padding: 8px 0;
+}
+
+.market__buy button{
+    background: #02C076;
+}
+
+.market__sell button{
+    background: #CF314A;
+}
 @media screen and (max-width: 468px){
     .main{
         grid-template: auto 1fr 1fr 1fr / repeat(2, 1fr);
+        height: auto;
     }
 
     .header{
@@ -188,5 +348,24 @@ body{
         grid-template-areas: "candle-chart"
         "buy-sell"
         "market-exchange";
+    }
+    .crypto-summary{
+        width: 100%;
+        border-right: 0;
+    }
+
+    .tabs{
+        font-size: 1.6rem;
+    }
+
+    .tabs li{
+        padding-bottom: 12px
+    };
+
+    .market__buy, .market__sell{
+        flex: 1;
+    }
+    .market{
+        grid-template-columns: 1fr;
     }
 }

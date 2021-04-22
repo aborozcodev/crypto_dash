@@ -69,10 +69,80 @@
 
         <main class="dashboard">
             <div class="dashboard__candle-chart">
-                candle
+                <div class="crypto-summary">
+                    
+                    <h2>ADA/USDT</h2>
+                    <span>Cardano</span>
+                    
+
+                    <div class="crypto-summary__exchange">
+                        <h4>4,894.52</h4>
+                        <p>$ 4.88</p>
+                    </div>
+
+                    <div class="crypto-summary__change">
+                        <h5>24H Change</h5>
+                        <div class="crypto-summary__quantity">
+                            <h6>0.6033</h6>
+                            <p>+4.54%</p>
+                        </div>
+                    </div>
+
+                    <div class="crypto-summary__high">
+                        <h5>24H High</h5>
+                        <p>0.6033</p>
+                    </div>
+
+                    <div class="crypto-summary__low">
+                        <h5>24H Low</h5>
+                        <p>0.6033</p>
+                    </div>
+                </div>
+                <div class="crypto-chart"></div>
             </div>
             <div class="dashboard__buy-sell">
-               
+                <ul class="tabs">
+                    <li><a href="">Limit</a></li>
+                    <li><a href="">Market</a></li>
+                    <li><a href="">Stop-limit</a></li>
+                </ul>
+
+                <div class="market">
+                    <div class="market__buy">
+                        <h2>Buy</h2>
+                        <p>256 USDT</p>
+
+                        <div class="market__input-main">
+                            <input type="text" value="102.4">
+                            <span>USDT</span>
+                        </div>
+                        <div class="market__input-secondary">
+                            <input type="text" value="501,198.848">
+                            <span>USDT</span>
+                        </div>
+                        <div class="market__range">
+                            <input type="range">
+                        </div>
+                        <button>Buy</button>
+                    </div>
+                    <div class="market__sell">
+                        <h2>Sell</h2>
+                        <p>0.58945000 ADA</p>
+
+                        <div class="market__input-main">
+                            <input type="text" value="102.4">
+                            <span>USDT</span>
+                        </div>
+                        <div class="market__input-secondary">
+                            <input type="text" value="501,198.848">
+                            <span>USDT</span>
+                        </div>
+                        <div class="market__range">
+                            <input type="range">
+                        </div>
+                        <button>Sell</button>
+                    </div>
+                </div>
             </div>
             <div class="dashboard__market-exchange">
                 
