@@ -14,7 +14,7 @@ body{
 .main{
     display: grid;
     grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
-    height: 100vh;
+    height: auto;
 }
 
 .header{
@@ -124,7 +124,7 @@ body{
     grid-column: 2 / 5;
     display: grid;
     gap: 30px;
-    grid-template: repeat(2, 1fr) / 2fr 1fr;
+    grid-template: repeat(2, auto) / 2fr 1fr;
     grid-template-areas: "candle-chart candle-chart"
     "buy-sell market-exchange";
     
